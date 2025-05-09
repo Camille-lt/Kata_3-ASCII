@@ -19,15 +19,11 @@ pen += ' /\\\n/__\\\n';
 for (let i = 0; i < nbrEtages; i++) {
     pen += '||||\n';  // Ajouter un étage à chaque itération
 }
-if (mois === 'mars') {
+if (nbrEtages < 5) {
+
     pen += '|__|\n';
-} else if ( mois === 'avril') {
-    pen += '|__|\n';
-} else if (mois === 'mai') {
-    pen += '|__|\n';
-} else if (mois === 'juin') {
-    pen += '|__|\n';
-} else {
+} 
+else {
     pen += '|__|\n|  |\n|__|\n'; 
 }
 return pen
@@ -36,4 +32,4 @@ console.log(drawMyPen('septembre'));
 console.log(drawMyPen('fevrier'));
 console.log(drawMyPen('mars'));
 console.log(drawMyPen('juin'));
-console.log(drawMyPen('octobre')); // pour exemple
+
